@@ -9,7 +9,7 @@ def canPlaceFlowers(self, flowerbed: list[int], n: int) -> bool:
             flowerbed[position] = 1 # 해당 인덱스 1 대입
             n -= 1 # n에서 1을 빼서 심어야 할 꽃의 개수 차감
 
-        if n <= 0: # 만약 n이 0이면 더이상 심어야할 꽃이 없는 것이기에 n이 0일 때도 있기에 포함시켜줘야한다.
+        if n <= 0: # 만약 n이 0이면 더이상 심어야할 꽃이 없는 것인가? 아니네 n이 0일 때도 있기에 포함시켜줘야한다.
             return True # True 반환
     return False # 아니면 False 반환
 
